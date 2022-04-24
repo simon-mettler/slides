@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Slides</title>
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+		<style>
+		.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {text-transform: none; }
+		.bibliography p {
+			font-size: 15px;
+			text-align: left;
+		}
+		.bibliography i {
+			font-style: italic;
+		}
+		.fragment { color: #7e7d7d; }
+		</style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown
+          data-separator="-----"
+          data-separator-vertical="---"
+        >
+<textarea data-template>
+## Visualisierung von Daten aus der Softwareentwicklung
+
+Simon Mettler 
+
+-----
+
+__Softwarevisualisierung (Diehl, 2007)__
+
+* Structure (Static) 
+* Behavior (Dynamisch) 
+* Evolution 
+
+---
+
+Softwaresysteme müssen sich laufend an veränderte Umstände anpassen, da sie ansonsten immer weniger zufriedenstellend werden.
+
+<small>First law of software evolution, Lehman et al., 1997</small>
+
+-----
+
+### Forschungsfrage 1
+Wie verändert sich die Ordner- und Dateistruktur von OSS während des Entwicklungsprozesses?
+
+---
+
+### Forschungsfrage 2
+Wie lassen sich Art und Grad dieser strukturellen Veränderungen von OSS visualisieren?
+
+-----
+
+### Ziele
+* Tool zur Visualisierung der strukturellen Änderungen 
+* Wiederkehrende Muster / Gemeinsamkeiten in der Veränderung der Struktur auffinden 
+<li class="fragment">Welche Umstände führen zu welchen strukturellen Änderungen?</li>
+<li class="fragment">Vorhersagen wie sich einzelne Projekte entwickeln werden</li>
+
+-----
+
+### Stand der Forschung 
+
+* Gute Studienlage im Bereich der Software-Evolution und Visualisierung
+* Evolution of Source Folder Structure (Capiluppi et al., 2004)
+
+-----
+<div class="bibliography">
+  <p>Capiluppi, A., Morisio, M., &amp; Ramil, J. F. (2004). The evolution of source folder structure in actively evolved open source systems. <i>10th International Symposium on Software Metrics, 2004. Proceedings.</i>, 2–13. <a href="https://doi.org/10.1109/METRIC.2004.1357886">https://doi.org/10.1109/METRIC.2004.1357886</a></p>
+  <p>Diehl, S. (2007). <i>Software visualization: Visualizing the structure, behaviour, and evolution of software</i>. Springer.</p>
+  <p>Lehman, M. M., Ramil, J. F., Wernick, P. D., Perry, D. E., &amp; Turski, W. M. (1997). Metrics and laws of software evolution-the nineties view. <i>Proceedings Fourth International Software Metrics Symposium</i>, 20–32. <a href="https://doi.org/10.1109/METRIC.1997.637156">https://doi.org/10.1109/METRIC.1997.637156</a></p>
+</div>
+
+</textarea>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../reveal.js/plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
+      });
+    </script>
+  </body>
+</html>
